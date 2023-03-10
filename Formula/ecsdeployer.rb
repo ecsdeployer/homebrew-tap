@@ -5,13 +5,13 @@
 class Ecsdeployer < Formula
   desc "Easily deploy containerized applications to AWS ECS Fargate"
   homepage "https://ecsdeployer.com"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ecsdeployer/ecsdeployer/releases/download/v0.1.0/ecsdeployer_darwin_x86_64.tar.gz"
-      sha256 "6e959d2587b1906c3bbb3eac844f1235aed8790ca48a10b3826bc53380b18f89"
+      url "https://github.com/ecsdeployer/ecsdeployer/releases/download/v0.2.0/ecsdeployer_darwin_x86_64.tar.gz"
+      sha256 "57b27977e524df617a9999071833a117798655e962313be993726add378a7d43"
 
       def install
         bin.install "ecsdeployer"
@@ -22,8 +22,8 @@ class Ecsdeployer < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ecsdeployer/ecsdeployer/releases/download/v0.1.0/ecsdeployer_darwin_arm64.tar.gz"
-      sha256 "ad62703fba11d90125b7bf1bd49459484b145f262b8459628722c1d027dcbfc8"
+      url "https://github.com/ecsdeployer/ecsdeployer/releases/download/v0.2.0/ecsdeployer_darwin_arm64.tar.gz"
+      sha256 "485152868f1123f87bf69c00f2024ffc3e5830b7e017a4ec28a64023b2947847"
 
       def install
         bin.install "ecsdeployer"
@@ -37,8 +37,8 @@ class Ecsdeployer < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/ecsdeployer/ecsdeployer/releases/download/v0.1.0/ecsdeployer_linux_x86_64.tar.gz"
-      sha256 "56e29bf591324cf596a089c4b0434b96b92dc92802de9643585c93906fe919de"
+      url "https://github.com/ecsdeployer/ecsdeployer/releases/download/v0.2.0/ecsdeployer_linux_x86_64.tar.gz"
+      sha256 "538e83c0faa15f4fa1bb2a0ff389d615d7f357238734b25a616bd9a95f555af2"
 
       def install
         bin.install "ecsdeployer"
@@ -49,8 +49,8 @@ class Ecsdeployer < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ecsdeployer/ecsdeployer/releases/download/v0.1.0/ecsdeployer_linux_arm64.tar.gz"
-      sha256 "d6d21d6625e6709992020c1b7a9b0928d8b6edd203d0b277910141581672429d"
+      url "https://github.com/ecsdeployer/ecsdeployer/releases/download/v0.2.0/ecsdeployer_linux_arm64.tar.gz"
+      sha256 "26d0666181decfaf497d6dbdd0555c5bed5219d107236dd2cf56268212ad3091"
 
       def install
         bin.install "ecsdeployer"
